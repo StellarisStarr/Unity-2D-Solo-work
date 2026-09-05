@@ -4,6 +4,7 @@ using UnityEngine.Tilemaps;
 
 public class GameBoardManager : MonoBehaviour
 {
+
     private Tilemap tilemap;
     public int Width;
     public int Height;
