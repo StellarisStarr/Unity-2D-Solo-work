@@ -3,6 +3,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float MoveSpeed = 3f;
+    [SerializeField] int HP;
+    
+    int HPOriginal;
 
     Rigidbody2D rigidbody;
     Vector2 Movement;
@@ -12,6 +15,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+        HPOriginal = HP;
     }
 
     // Update is called once per frame
